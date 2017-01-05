@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1483516990501
+Build-Jdk: 1.8.0_101
+Built-By: ram
+Bundle-ClassPath: .,OSGI-INF/lib/commons-io-1.4.jar,OSGI-INF/lib/jmock-l
+ egacy-2.5.1.jar,OSGI-INF/lib/cglib-nodep-2.1_3.jar,OSGI-INF/lib/objenes
+ is-1.0.jar,OSGI-INF/lib/httpclient-4.1.jar,OSGI-INF/lib/httpcore-4.1.ja
+ r,OSGI-INF/lib/jsoup-1.7.2.jar
+Bundle-Description: Services, helpers, tags, and other items specific to
+  AIG Global Code Base - Core Bundle
+Bundle-ManifestVersion: 2
+Bundle-Name: AIG Global Core Bundle
+Bundle-SymbolicName: com.aig.core
+Bundle-Version: 12.0.23.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;scope=compile|runtime
+Embed-Directory: OSGI-INF/lib
+Embedded-Artifacts: OSGI-INF/lib/commons-io-1.4.jar;g="commons-io";a="co
+ mmons-io";v="1.4",OSGI-INF/lib/jmock-legacy-2.5.1.jar;g="org.jmock";a="
+ jmock-legacy";v="2.5.1",OSGI-INF/lib/cglib-nodep-2.1_3.jar;g="cglib";a=
+ "cglib-nodep";v="2.1_3",OSGI-INF/lib/objenesis-1.0.jar;g="org.objenesis
+ ";a="objenesis";v="1.0",OSGI-INF/lib/httpclient-4.1.jar;g="org.apache.h
+ ttpcomponents";a="httpclient";v="4.1",OSGI-INF/lib/httpcore-4.1.jar;g="
+ org.apache.httpcomponents";a="httpcore";v="4.1",OSGI-INF/lib/jsoup-1.7.
+ 2.jar;g="org.jsoup";a="jsoup";v="1.7.2"
+Import-Package: COM.jrockit.reflect;resolution:=optional,com.day.cq.poll
+ ing.importer;version="[5.7,6)";resolution:=optional,javax.crypto;resolu
+ tion:=optional,javax.crypto.spec;resolution:=optional,javax.net.ssl;res
+ olution:=optional,javax.security.auth.x500;resolution:=optional,jrockit
+ .vm;resolution:=optional,net.sf.cglib.asm.util;resolution:=optional,org
+ .apache.commons.codec.binary;version="[1.4,2)";resolution:=optional,org
+ .apache.commons.logging;resolution:=optional,org.apache.sling.api;versi
+ on="[2.3,3)";resolution:=optional,org.apache.sling.api.resource;version
+ ="[2.5,3)";resolution:=optional,org.apache.sling.api.servlets;version="
+ [2.1,3)";resolution:=optional,org.apache.sling.commons.json;version="[2
+ .0,3)";resolution:=optional,org.apache.sling.commons.osgi;version="[2.2
+ ,3)";resolution:=optional,org.apache.tools.ant;resolution:=optional,org
+ .apache.tools.ant.types;resolution:=optional,org.codehaus.aspectwerkz.h
+ ook;resolution:=optional,org.ietf.jgss;resolution:=optional,org.jmock.a
+ pi;resolution:=optional,org.jmock.internal;resolution:=optional,org.osg
+ i.service.component;version="[1.1,2)";resolution:=optional,org.slf4j;ve
+ rsion="[1.6,2)";resolution:=optional,sun.reflect;resolution:=optional
+Service-Component: OSGI-INF/serviceComponents.xml
+Tool: Bnd-1.50.0

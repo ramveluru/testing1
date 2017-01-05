@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" immediate="true" name="com.ankit.gubrani.blog.factoryconfig.FactoryConfig" configuration-policy="require" activate="activate">
+        <implementation class="com.ankit.gubrani.blog.factoryconfig.FactoryConfig"/>
+        <property name="dummy.prop" type="String" value="Dummy Value" private="false"/>
+        <property name="service.pid" value="com.ankit.gubrani.blog.factoryconfig.FactoryConfig" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer">
+        <implementation class="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer"/>
+        <service servicefactory="false">
+            <provide interface="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer"/>
+        </service>
+        <property name="service.pid" value="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer" private="false"/>
+        <reference name="Code Brains Demo Factory configurations" interface="com.ankit.gubrani.blog.factoryconfig.FactoryConfig" cardinality="0..n" policy="dynamic" bind="bindFactoryConfig" unbind="unbindFactoryConfig" checked="true" strategy="event"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.ankit.gubrani.blog.impl.CodebrainsDemoServiceImpl">
+        <implementation class="com.ankit.gubrani.blog.impl.CodebrainsDemoServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.ankit.gubrani.blog.CodebrainsDemoService"/>
+        </service>
+        <property name="author" type="String" value="ankit.gubrani" private="false"/>
+        <property name="service.pid" value="com.ankit.gubrani.blog.impl.CodebrainsDemoServiceImpl" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="Codebrains Polling Importer">
+        <implementation class="com.ankit.gubrani.blog.polling.DemoPollingImporter"/>
+        <service servicefactory="false">
+            <provide interface="com.day.cq.polling.importer.Importer"/>
+        </service>
+        <property name="importer.scheme" type="String" value="Codebrains" private="false"/>
+        <property name="service.pid" value="Codebrains Polling Importer" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.ankit.gubrani.blog.servlets.DropdownDummyDataProvider">
+        <implementation class="com.ankit.gubrani.blog.servlets.DropdownDummyDataProvider"/>
+        <service servicefactory="false">
+            <provide interface="com.ankit.gubrani.blog.servlets.DropdownDummyDataProvider"/>
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths" value="/bin/codebrains" private="false"/>
+        <property name="service.pid" value="com.ankit.gubrani.blog.servlets.DropdownDummyDataProvider" private="false"/>
+    </scr:component>
+</components>

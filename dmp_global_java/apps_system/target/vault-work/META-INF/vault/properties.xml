@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Apps System Package</comment>
+<entry key="createdBy">ram</entry>
+<entry key="name">apps_system</entry>
+<entry key="created">2017-01-04T13:33:15.132+0530</entry>
+<entry key="groupId">com.aig.dmp</entry>
+<entry key="version">12.0.23-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">aig-global</entry>
+<entry key="description">Apps System Package for Global Code base containing functionalities that customize AEM functionalities</entry>
+<entry key="artifactId">apps_system</entry>
+<entry key="path">/etc/packages/aig-global/apps_system.zip</entry>
+</properties>

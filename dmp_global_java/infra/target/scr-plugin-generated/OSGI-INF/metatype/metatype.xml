@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="com.ankit.gubrani.blog.factoryconfig.FactoryConfig" name="Factory configuration" description="This is factory configuration which acts as a interface for allowing user to enter property values">
+        <AD id="dummy.prop" type="String" default="Dummy Value" name="Dummy property" description="This is just dummy property"/>
+    </OCD>
+    <OCD id="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer" name="Factory Congifuration" description="%com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer.description"/>
+    <Designate pid="com.ankit.gubrani.blog.factoryconfig.FactoryConfig" factoryPid="com.ankit.gubrani.blog.factoryconfig.FactoryConfig">
+        <Object ocdref="com.ankit.gubrani.blog.factoryconfig.FactoryConfig"/>
+    </Designate>
+    <Designate pid="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer">
+        <Object ocdref="com.ankit.gubrani.blog.factoryconfig.FactoryConfigConsumer"/>
+    </Designate>
+</metatype:MetaData>

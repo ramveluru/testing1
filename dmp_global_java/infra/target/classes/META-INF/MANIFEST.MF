@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1483516997420
+Build-Jdk: 1.8.0_101
+Built-By: ram
+Bundle-Description: Services, helpers and other items specific to AIG Gl
+ obal Code Base - Infra Bundle
+Bundle-ManifestVersion: 2
+Bundle-Name: Infra Bundle
+Bundle-SymbolicName: com.aig.infra-bundle
+Bundle-Version: 12.0.23.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.ankit.gubrani.blog;version="1.0.0",com.ankit.gubrani
+ .blog.factoryconfig;uses:="org.osgi.service.component,org.slf4j,org.apa
+ che.sling.commons.osgi";version="12.0.23.SNAPSHOT",com.ankit.gubrani.bl
+ og.polling;uses:="org.slf4j,org.apache.sling.api.resource,com.day.cq.po
+ lling.importer";version="12.0.23.SNAPSHOT",com.ankit.gubrani.blog.servl
+ ets;uses:="org.slf4j,org.apache.sling.commons.json,org.apache.sling.api
+ ,org.apache.sling.api.servlets";version="12.0.23.SNAPSHOT"
+Import-Package: com.ankit.gubrani.blog;version="[1.0,2)",com.day.cq.poll
+ ing.importer;version="[5.7,6)",org.apache.sling.api;version="[2.3,3)",o
+ rg.apache.sling.api.resource;version="[2.5,3)",org.apache.sling.api.ser
+ vlets;version="[2.1,3)",org.apache.sling.commons.json;version="[2.0,3)"
+ ,org.apache.sling.commons.osgi;version="[2.2,3)",org.osgi.service.compo
+ nent;version="[1.1,2)",org.slf4j;version="[1.6,2)"
+Service-Component: OSGI-INF/serviceComponents.xml
+Tool: Bnd-1.50.0
