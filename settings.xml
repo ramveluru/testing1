@@ -53,7 +53,7 @@ under the License.
   <localRepository>/path/to/local/repo</localRepository>
  -->
  <!-- <localRepository>D:/Maven_Repository/.m2/repository</localRepository>   -->
-<localRepository>C:\Users\manjunath.k\.m2</localRepository>
+<localRepository>C:\Users\ram\.m2</localRepository>
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
    | maven will use a sensible default value, perhaps based on some other setting, for
@@ -167,7 +167,7 @@ under the License.
 	<mirror>
        <id>aigrepository</id>
        <name>AIG Artifact Repository</name>
-       <url>http://10.91.209.121:8081/nexus/content/groups/aigrepository</url>
+       <url>http://localhost:8081/nexus/content/groups/aigrepository</url>
        <mirrorOf>*</mirrorOf>
     </mirror>  
 	

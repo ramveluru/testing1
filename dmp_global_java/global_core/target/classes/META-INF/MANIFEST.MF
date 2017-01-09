@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1483516990501
+Bnd-LastModified: 1483948825196
 Build-Jdk: 1.8.0_101
 Built-By: ram
 Bundle-ClassPath: .,OSGI-INF/lib/commons-io-1.4.jar,OSGI-INF/lib/jmock-l
