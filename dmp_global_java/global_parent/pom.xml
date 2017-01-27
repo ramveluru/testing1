@@ -8,7 +8,7 @@
 	<groupId>com.aig.dmp</groupId>
 	<artifactId>global-parent-java</artifactId>
 	<version>12.0.23-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>war</packaging>
 
 	<name>DMP Parent POM for JAVA</name>
 	<description>Maven Parent POM for global Java</description>
