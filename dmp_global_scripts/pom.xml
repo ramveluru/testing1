@@ -16,7 +16,7 @@
     <!-- ====================================================================== -->
 
     <artifactId>QCscripts</artifactId>
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
     <name>AIG Global java</name>
     <description>
         Complete business logic for AIG DMP Framework
